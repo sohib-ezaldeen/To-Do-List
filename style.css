@@ -8,7 +8,6 @@ body {
 }
 
 .continer {
-
     height: 100vh;
     width: 100%;
     display: flex;
@@ -29,7 +28,6 @@ body {
 .box h2 {
     margin: 0;
     margin: 20px auto;
-
 }
 
 .box .dolist {
@@ -64,31 +62,55 @@ body {
 .box ul {
     padding: 0;
     width: 100%;
-
 }
 
 ul li {
     position: relative;
+    display:flex;
+    align-items: center;
 }
 
 .del {
     position: absolute;
-    right: 15px;
+    right: 10px;
     background-color: orangered;
     color: #fff;
-    padding: 2px;
+    padding: 5px;
     border-radius: 8px;
     width: fit-content;
     height: fit-content;
     border: none;
     border: 1px solid orangered;
     cursor: pointer;
+    transition: 0.5s;
+}
 
+.update {
+    position: absolute;
+    right: 50px;
+    background-color:#28a745;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+   
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.5s;
+
+}
+.update:hover{
+    background-color:#218838 ;
+}
+
+.del:hover {
+    background-color: rgb(247, 96, 42);
+    transform: scale(1.05);
 }
 
 .item {
-
-
     text-decoration: none;
     list-style: none;
     min-width: calc(100% - 50px);
@@ -96,5 +118,21 @@ ul li {
     padding: 10px 20px;
     margin-bottom: 10px;
     border-radius: 8px;
+}
 
+button.clear {
+
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    background-color: orangered;
+    cursor: pointer;
+    display: none;
+}
+
+.clear:hover {
+    background-color: rgb(255, 0, 0);
 }
